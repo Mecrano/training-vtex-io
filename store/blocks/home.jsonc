@@ -1,0 +1,76 @@
+{
+    "store.home": {
+        "blocks": ["slider-layout#first-slider"]
+    },
+    "slider-layout#first-slider": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 3,
+                "tablet": 2,
+                "phone": 1
+            },
+            "infinite": false
+        },
+        "children": ["flex-layout.row#text1", "flex-layout.row#text2", "flex-layout.row#text3", "flex-layout.row#text4"]
+    },
+
+    "flex-layout.row#text1": {
+        "children": ["flex-layout.col#text1"]
+    },
+
+    "flex-layout.col#text1": {
+        "children": ["image#icon-category", "rich-text#text1"]
+    },
+    "flex-layout.row#text2": {
+        "children": ["flex-layout.col#text2"]
+    },
+
+    "flex-layout.col#text2": {
+        "children": ["image#icon-category", "rich-text#text2"]
+    },
+    "flex-layout.row#text3": {
+        "children": ["flex-layout.col#text3"]
+    },
+
+    "flex-layout.col#text3": {
+        "children": ["image#icon-category", "rich-text#text3"]
+    },
+    "flex-layout.row#text4": {
+        "children": ["flex-layout.col#text4"]
+    },
+
+    "flex-layout.col#text4": {
+        "children": ["image#icon-category", "rich-text#text4"]
+    },
+
+    "rich-text#text1": {
+        "props": {
+            "text": "Texto 1"
+        }
+    },
+    "rich-text#text2": {
+        "props": {
+            "text": "Texto 2"
+        }
+    },
+    "rich-text#text3": {
+        "props": {
+            "text": "Texto 3"
+        }
+    },
+    "rich-text#text4": {
+        "props": {
+            "text": "Texto 4"
+        }
+    },
+
+    "image#icon-category": {
+        "props": {
+            "src": "assets/categories/categoria4.jpg",
+            "link": {
+              "url": "/tecnologia",
+              "newTab": true
+            }
+        }
+    }
+}

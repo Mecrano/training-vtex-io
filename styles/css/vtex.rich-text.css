@@ -1,0 +1,11 @@
+.container {
+    text-align: center;
+}
+
+.container .wrapper {
+    width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--titulos) .wrapper .paragraph--text-red {
+    color: red;
+}

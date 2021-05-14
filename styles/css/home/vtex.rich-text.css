@@ -1,0 +1,8 @@
+
+:global(.vtex-flex-layout-0-x-flexRow--titulos) .wrapper .paragraph--text-bold {
+    font-weight: bold;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--titulos) .wrapper .heading-level-2--text-blue {
+    color: blue;
+}

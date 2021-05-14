@@ -1,6 +1,6 @@
 {
     "store.home": {
-        "blocks": ["slider-layout#first-slider"]
+        "blocks": ["slider-layout#first-slider", "flex-layout.row#css-child"]
     },
     "slider-layout#first-slider": {
         "props": {
@@ -68,9 +68,34 @@
         "props": {
             "src": "assets/categories/categoria4.jpg",
             "link": {
-              "url": "/tecnologia",
-              "newTab": true
+                "url": "/tecnologia",
+                "newTab": true
             }
         }
+    },
+
+    "rich-text#css-test": {
+        "props": {
+            "text": "Un titulo rojo bold",
+            "blockClass": ["text-red", "text-bold"]
+        }
+    },
+
+    "rich-text#css-test2": {
+        "props": {
+            "text": "## Un titulo azul itallic",
+            "blockClass": "text-blue"
+        }
+    },
+
+    "flex-layout.row#css-child": {
+        "props": {
+            "blockClass": "titulos"
+        },
+        "children": ["flex-layout.col#css-child"]
+    },
+
+    "flex-layout.col#css-child": {
+        "children": ["rich-text#css-test", "rich-text#css-test2"]
     }
 }

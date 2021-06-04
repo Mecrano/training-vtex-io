@@ -1,6 +1,6 @@
 {
     "store.home": {
-        "blocks": ["slider-layout#first-slider", "flex-layout.row#css-child"]
+        "blocks": ["slider-layout#first-slider", "flex-layout.row#css-child", "saludo"]
     },
     "slider-layout#first-slider": {
         "props": {
@@ -97,5 +97,11 @@
 
     "flex-layout.col#css-child": {
         "children": ["rich-text#css-test", "rich-text#css-test2"]
+    },
+
+    "saludo": {
+        "props": {
+            "email": "cdcs0128@gmail.com"
+        }
     }
 }
